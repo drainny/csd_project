@@ -14,6 +14,12 @@ integration: in slide)
 Additional:  
 add Gaussian distribution to generator (Tong)  
 
+next meeting: 2-3pm Wed  
+Finish all codes part  
+
+next next meeting: Friday afternoon  
+Finish slide
+
 ## Experiment Set-up
 
 ## Structure
