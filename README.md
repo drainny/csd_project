@@ -1,18 +1,18 @@
 # csd_project
 
-Basic:
-finish the rest of codes and create new branch (Tong)
-write test branch (XH)
-decide who is doing the mid present
-make slide and practice to present together 
-slide:
-(git: branch
-agile methods: in slide
-test: pytest in the code, unitest and doctest in slide
-integration: in slide)
+Basic:  
+finish the rest of codes and create new branch (Tong)  
+write test branch (XH)  
+decide who is doing the mid present  
+make slide and practice to present together   
+slide:  
+(git: branch  
+agile methods: in slide  
+test: pytest in the code, unitest and doctest in slide  
+integration: in slide)  
 
-Additional:
-add Gaussian distribution to generator (Tong)
+Additional:  
+add Gaussian distribution to generator (Tong)  
 
 ## Experiment Set-up
 
