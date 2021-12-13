@@ -8,7 +8,7 @@ make slide and practice to present together
 slide:  
 (git: branch  
 agile methods: in slide  
-test: pytest in the code, unitest and doctest in slide  
+test: pytest in code, unitest and doctest in slide  
 integration: in slide)  
 
 Additional:  
