@@ -1,37 +1,59 @@
 import random as r
 
-class Trajectory:
+class Generator:
     """A 3-dimensional line created by particle source
 
     Line is parametrized by  x = kx * z + bx; y = ky * z + by
     """
-    def __init__(self, xSlope, xIntercept, ySlope, yIntercept):
-        self.kx, self.bx = xSlope, xIntercept
-        self.ky, self.by = ySlope, yIntercept
+    def __init__(self, rsl):
+        self.rsl = rsl
+        self.kx, self.bx, self.ky, self.by = 0, 0, 0, 0
+        self._x_n, self._y_n = 0, 0
+
+    def generate(self):
+        """Generate a random trajectory that at least hit one sensor"""
+        self.kx = r.uniform(-1, 1)
+        self.bx = r.uniform(-0.5, 0.5)
+        self.ky = r.uniform(-1, 1)
+        self.by = r.uniform(-0.5, 0.5)
+
 
     def hitPoints(self):
         """Calculate the hitpoints on sensors
 
         Returns a 5x2 array, for five hitpoints and each point has
-        2 coordinates. If a sensor is not hit, the corresponding
+        2 coordinates. If a sensor is not hitted, the corresponding
         row is None
         """
-        points = []
-        for i in range(0, 4):
-            x = self.kx * (1 + 0.1 * i) + self.bx
-            y = self.ky * (1 + 0.1 * i) + self.by
-            nx = x // 0.000025
-            ny = y // 0.000025
-            points[i] = [nx, ny] if max(abs(x), abs(y)) < 0.5 else None
-        return points
+        # Generate
+        self.generate()
+        self._x_n = [self.kx * (i * 0.1 + 1) for i in range(5)]
+        self._y_n = [self.ky * (i * 0.1 + 1) for i in range(5)]
+        for i in range(5):
+            if max(self._x_n[i], self._y_n[i])>0.5:
+                self._x_n[i] = 0
+                self._y_n[i] = 0
 
-def generate():
-    """Generate a random trajectory that at least hit one sensor"""
-    kx = r.uniform(-1, 1)
-    bx = r.uniform(-0.5, 0.5)
-    ky = r.uniform(-1, 1)
-    by = r.uniform(-0.5, 0.5)
-    # Only return when t.points[0] is not None
-    while True:
-        t = Trajectory(kx, bx, ky, by)
-        if t.points[0] return t
+    def observe(self):
+        """From the sensor side, calculate observed ranges of hit points. """
+
+        self.hitPoints()
+
+        # Determin the number
+        _num_x_n = [self._x_n[i] // self.rsl for i in range(5)]
+        _num_y_n = [self._y_n[i] // self.rsl for i in range(5)]
+
+        # Max and min values of x and y
+        x_n_max = [(_num_x_n[i] + 1) * self.rsl for i in range(5)]
+        x_n_min = [(_num_x_n[i]) * self.rsl for i in range(5)]
+        y_n_max = [(_num_y_n[i] + 1) * self.rsl for i in range(5)]
+        y_n_min = [(_num_y_n[i]) * self.rsl for i in range(5)]
+
+        return x_n_max, x_n_min, y_n_max, y_n_min
+
+
+
+
+
+
+
