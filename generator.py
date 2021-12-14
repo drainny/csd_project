@@ -12,9 +12,9 @@ class Generator:
 
     def generate(self):
         """Generate a random trajectory that at least hit one sensor"""
-        self.kx = r.uniform(-1, 1)
+        self.kx = r.uniform(-0.5, 0.5)
         self.bx = r.uniform(-0.5, 0.5)
-        self.ky = r.uniform(-1, 1)
+        self.ky = r.uniform(-0.5, 0.5)
         self.by = r.uniform(-0.5, 0.5)
 
 
