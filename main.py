@@ -4,6 +4,7 @@ from fitting import fit
 def isOk(traj, res, error = 0.1):
     """Compare a result with a trajectory"""
     print(traj.kx, res.kx, traj.ky, res.ky)
+    return abs((traj.kx-res.kx)/traj.kx) < error and abs((traj.ky-res.ky)/traj.ky) < error
     # comp = [abs(traj.kx - res.kx) < error, abs(traj.ky - res.ky) < error]
     # warnstr = ["kx ", "ky "]
     # warn = ""
