@@ -6,16 +6,16 @@ write test branch (XH)
 decide who is doing the mid present  
 make slide and practice to present together   
 slide:  
-(git: branch  
-agile methods: in slide  
-test: pytest in code, unitest and doctest in slide  
-integration: in slide)  
+(git: branch(Tong, XH)  
+agile methods: in slide(Tong)  
+test: pytest in code, unitest and doctest in slide(XH)  
+integration: in slide(Hakan, final))  
 
 Additional:  
 add Gaussian distribution to generator (Tong)  
 
-next meeting: 2-3pm Wed  
-Finish all codes part  
+<s>next meeting: 2-3pm Wed  
+Finish all codes part  </s> 
 
 next next meeting: Friday afternoon  
 Finish slide
