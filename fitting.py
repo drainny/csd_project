@@ -6,7 +6,7 @@ class fit:
     """
     Linear regression with minimal sum of squared errors.
     """
-    def __init__(self, y_n_max, y_n_min, x_n_max, x_n_min):
+    def __init__(self, x_n_max, x_n_min, y_n_max, y_n_min):
         self.y_n_max = y_n_max
         self.y_n_min = y_n_min
         self.x_n_max = x_n_max
@@ -30,6 +30,6 @@ class fit:
         A = np.vstack([self.z_n, np.ones(len(self.z_n))]).T
         y = np.array(self.y_n)[:, np.newaxis]
         x = np.array(self.x_n)[:, np.newaxis]
-        self.k_y = np.dot((np.dot(np.linalg.inv(np.dot(A.T, A)), A.T)), y)[0]
-        self.k_x = np.dot((np.dot(np.linalg.inv(np.dot(A.T, A)), A.T)), x)[0]
+        self.ky = np.dot((np.dot(np.linalg.inv(np.dot(A.T, A)), A.T)), y)[0][0]
+        self.kx = np.dot((np.dot(np.linalg.inv(np.dot(A.T, A)), A.T)), x)[0][0]
 
