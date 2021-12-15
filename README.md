@@ -1,7 +1,7 @@
 # csd_project
 
 Basic:  
-finish the rest of codes and create new branch (Tong)  
+<s>finish the rest of codes and create new branch (Tong)</s>  
 write test branch (XH)  
 decide who is doing the mid present  
 make slide and practice to present together   
