@@ -6,10 +6,10 @@ write test branch (XH)
 decide who is doing the mid present  
 make slide and practice to present together   
 slide:  
-(git: branch(Tong, XH)  
+(git: branch(Tong)  
 agile methods: in slide(Tong)  
 test: pytest in code, unitest and doctest in slide(XH)  
-integration: in slide(Hakan, final))  
+integration: in slide(XH))  
 
 Additional:  
 add Gaussian distribution to generator (Tong)  
