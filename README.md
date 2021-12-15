@@ -17,7 +17,7 @@ add Gaussian distribution to generator (Tong)
 <s>next meeting: 2-3pm Wed  
 Finish all codes part  </s> 
 
-next next meeting: Friday 5-6:30pm   
+next next meeting: Friday 6:30-8:00pm   
 Finish slide
 
 ## Experiment Set-up
