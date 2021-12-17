@@ -11,8 +11,8 @@ agile methods: in slide(Tong)
 test: pytest in code, unitest and doctest in slide(XH)  
 integration: in slide(XH))  </s>
 
-<s>Additional:  
-add Gaussian distribution to generator (Tong)  </s>
+Additional:  
+<s>add Gaussian distribution to generator (Tong)  </s>
 
 <s>next meeting: 2-3pm Wed  
 Finish all codes part  </s> 
