@@ -2,9 +2,9 @@
 
 Basic:  
 <s>finish the rest of codes and create new branch (Tong)</s>  
-write test branch (XH)  
+<s>write test branch (XH)  </s>  
 <s>decide who is doing the mid present  </s>  
-make slide and practice to present together   
+<s>make slide and practice to present together </s>  
 slide:  
 (git: branch(Tong)  
 agile methods: in slide(Tong)  
@@ -17,8 +17,8 @@ add Gaussian distribution to generator (Tong)
 <s>next meeting: 2-3pm Wed  
 Finish all codes part  </s> 
 
-next next meeting: Friday 6:30-8:00pm   
-Finish slide
+<s>next next meeting: Friday 6:30-8:00pm   
+Finish slide</s>  
 
 ## Experiment Set-up
 
