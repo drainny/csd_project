@@ -6,19 +6,22 @@ Basic:
 <s>decide who is doing the mid present  </s>  
 <s>make slide and practice to present together </s>  
 slide:  
-(git: branch(Tong)  
+<s>(git: branch(Tong)  
 agile methods: in slide(Tong)  
 test: pytest in code, unitest and doctest in slide(XH)  
-integration: in slide(XH))  
+integration: in slide(XH))  </s>
 
-Additional:  
-add Gaussian distribution to generator (Tong)  
+<s>Additional:  
+add Gaussian distribution to generator (Tong)  </s>
 
 <s>next meeting: 2-3pm Wed  
 Finish all codes part  </s> 
 
 <s>next next meeting: Friday 6:30-8:00pm   
 Finish slide</s>  
+
+next next next meeting: Saturday 6:30pm
+Present together
 
 ## Experiment Set-up
 
