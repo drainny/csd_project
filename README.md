@@ -3,7 +3,7 @@
 Basic:  
 <s>finish the rest of codes and create new branch (Tong)</s>  
 write test branch (XH)  
-decide who is doing the mid present  
+<s>decide who is doing the mid present  </s>  
 make slide and practice to present together   
 slide:  
 (git: branch(Tong)  
