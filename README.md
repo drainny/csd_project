@@ -1,5 +1,5 @@
-# csd_project
-
+# csd_project  
+This is a repository of course "Collaborative software development WS 21/22". Members: Xianghang, Hakan, Tong.  
 ## Experiment Set-up
 
 ## Structure
