@@ -34,20 +34,28 @@ class Generator:
                 self._x_n[i] = 0
                 self._y_n[i] = 0
 
+    def write(self, filename):
+        f = open(filename, 'a')
+        writestring = ''
+        for i in range(0, 5):
+            writestring += '(' + str(self._num_x_n[i]) + ", " + str(self._num_y_n[i]) + ") "
+        f.write(writestring)
+        f.close()
+
     def observe(self):
         """From the sensor side, calculate observed ranges of hit points. """
 
         self.hitPoints()
 
         # Determin the number
-        _num_x_n = [self._x_n[i] // self.rsl for i in range(5)]
-        _num_y_n = [self._y_n[i] // self.rsl for i in range(5)]
+        self._num_x_n = [self._x_n[i] // self.rsl for i in range(5)]
+        self._num_y_n = [self._y_n[i] // self.rsl for i in range(5)]
 
         # Max and min values of x and y
-        x_n_max = [(_num_x_n[i] + 1) * self.rsl for i in range(5)]
-        x_n_min = [(_num_x_n[i]) * self.rsl for i in range(5)]
-        y_n_max = [(_num_y_n[i] + 1) * self.rsl for i in range(5)]
-        y_n_min = [(_num_y_n[i]) * self.rsl for i in range(5)]
+        x_n_max = [(self._num_x_n[i] + 1) * self.rsl for i in range(5)]
+        x_n_min = [(self._num_x_n[i]) * self.rsl for i in range(5)]
+        y_n_max = [(self._num_y_n[i] + 1) * self.rsl for i in range(5)]
+        y_n_min = [(self._num_y_n[i]) * self.rsl for i in range(5)]
 
         return x_n_max, x_n_min, y_n_max, y_n_min
 
