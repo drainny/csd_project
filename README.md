@@ -1,6 +1,11 @@
 # csd_project  
 This is a repository of course "Collaborative software development WS 21/22". Members: Xianghang, Hakan, Tong.  
-## Experiment Set-up
+## List
+display  
+refactoring  
+finally, pip install  
+automated documentation, SPHINX  
+DataFrame form, Parquet  
 
 ## Structure
 This project is devided into 3 parts.
